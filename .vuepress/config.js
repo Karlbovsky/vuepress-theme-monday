@@ -2,7 +2,7 @@ module.exports = {
   base: '/',
   dest: 'dist',
   title: 'Vuepress Blog',
-  description: 'Theme-First. Just playing around',
+  description: 'Just playing around | theme-monday',
   theme: 'first',
   themeConfig: {
     nav: [
@@ -83,8 +83,7 @@ module.exports = {
     [
       'script',
       {
-        src:
-          'https://identity.netlify.com/v1/netlify-identity-widget.js'
+        src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'
       }
     ]
   ],

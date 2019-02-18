@@ -1,7 +1,7 @@
 <template>
   <div class="blog-index">
     <div v-for="post in posts" class="blog-index__content">
-      <div class="row" v-if="post.frontmatter.thumbnail!=0">
+      <div class="row" v-if="post.frontmatter.featuredImage != null">
         <div class="col-xs col-md-6">
           <div class="row justify-content-start align-items-center">
             <div class="col">
@@ -12,7 +12,7 @@
                       <p class="post-title">
                         <router-link
                           :to="post.path"
-                          class="post-title post-title__link"
+                          class="post-title--small post-title__link"
                         >{{ post.frontmatter.title }}</router-link>
                         <span v-if="showTags">
                           <div class="tag-container">

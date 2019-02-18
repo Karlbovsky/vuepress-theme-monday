@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="display-3 text--col-brand-light font-weight-light">{{ title }}</h1>
-    <p class="subheader">{{description}}</p>
+    <h1 class="post-title text--col-brand-light font-weight-light">{{ title }}</h1>
+    <p class="post__subheader">{{description}}</p>
   </div>
 </template>
 

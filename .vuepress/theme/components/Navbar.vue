@@ -19,7 +19,7 @@
       </router-link>
       <div class="divider"></div>
       <a v-for="socialItem in this.$site.themeConfig.social" :href="socialItem.url" target="_blank">
-        <div v-if="socialItem.url" type="button" class="somespace--tl nav-item--color" @click.stop>
+        <div v-if="socialItem.url" class="somespace--tl nav-item--color" @click.stop>
           <i :class="socialItem.icon"></i>
         </div>
       </a>

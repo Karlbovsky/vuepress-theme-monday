@@ -4,6 +4,7 @@
 .jumbotron {
     transition: all 0.2s !important;
     padding: .55em .8em .3em .8em;
+    overflow: hidden;
 
     @media screen and (min-width: $break-large) {
         padding: .55em 2em .55em 2em;
@@ -11,14 +12,27 @@
 }
 
 .jumbo__background {
-    background-color: transparentize($brand-color, .96);
+    background-color: $accent-color;
 }
 
+.baseheader__title {
+    transform: translate(-1000px, 0);
+    animation: slide-in-left .5s forwards;
+}
 
 .subheader {
+    padding-top: .26em;
+    font-weight: 300;
+    font-size: 1.18rem;
+    color: darken($white, 5%);
+    transform: translate(-999px, 0);
+    animation: slide-in-left 1s forwards;
+}
+
+.post__subheader {
     font-weight: 300;
     font-size: 1.28rem;
-    color: darken($white, 90%);
+    color: darken($white, 60%);
 }
 
 // Components
@@ -29,13 +43,14 @@
 }
 
 .nav-item--color {
-    color: lighten($brand-color, 35%);
-    border-color: lighten($brand-color, 15%);
+    //border: .1em solid rgba(0, 0, 0, 0.1);
+    padding: .1em .2em;
+    color: darken($white, 20%);
 
     &:hover {
-        color: lighten($brand-color, 20%);
+        color: darken($white, 15%);
         background-color: transparent;
-        border-color: lighten($brand-color, 30%);
+        border-color: rgba(0, 0, 0, 0.055);
     }
 }
 
@@ -74,6 +89,12 @@
 }
 
 .post-title {
+    padding-top: .3em;
+    font-size: 4em;
+}
+
+.post-title--small {
+    margin-top: 1em;
     padding: 0.1em;
     font-size: 2.6rem;
     font-weight: 100;
@@ -127,7 +148,7 @@
 }
 
 .text--col-brand-light {
-    color: lighten($brand-color, 22%);
+    color: lighten($brand-color, 42%);
 }
 
 // Utitlities
@@ -166,6 +187,17 @@
 
 .bg-accent {
     background-color: $accent-color;
+}
+
+// Animations 
+@keyframes slide-in-left {
+    0% {
+        transform: translate(-999, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 
