@@ -39,6 +39,7 @@
               alt="image"
             >
           </div>
+          <div v-else style="padding-bottom: 1em;"></div>
           <PostHeader
             :title="this.$page.frontmatter.title"
             :description="this.$page.frontmatter.description"

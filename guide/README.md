@@ -1,12 +1,16 @@
 ---
-title: 'Guide and Dev Book'
+title: Guide and Dev Book
 lang: en-US
-description: Approaching the Jam Stack!
+description: Approaching the Jam Stack
 author: Karlbovsky
 type: indexPage
 ---
 
-Building a custom Theme for <i class="text-success">Vuepress</i> could be a journey... :ski:
+##### Resources
+
+[Vuepress](https://vuepress.vuejs.org/)
+[Bootstrap](https://getbootstrap.com/)
+[Netlify CMS](https://www.netlifycms.org/)
 
 ##### Styling | Custom and Framework :art:
 
@@ -69,7 +73,9 @@ Therefore, each `Vue layout` template should start with a <code>&lt;row&gt;</cod
 
 Limit the number of **Layouts** (i.e.Home, list Presentations (blogs/galleries/etc..), About)
 
-Markdown built to fit the views ( Layouts ) using `slot-key` attribute on both, the `markdown` and the `component`.
+Markdown files that are not going to change frequently or at all
+are built to fit the views ( Layouts ) using `slot-key` attribute on both,
+the `markdown` and the `component`.
 
 <hr>
 

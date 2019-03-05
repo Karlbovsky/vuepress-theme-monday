@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  name: 'vuepress-theme-first',
+  name: 'vuepress-theme-monday',
   layoutDir: 'layouts',
   plugins: [
     [

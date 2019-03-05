@@ -8,7 +8,11 @@
           :title="this.$site.title"
           :description="this.$site.description"
         />
-        <BaseHeader v-else :title="this.$page.title" :description="this.$page.description"/>
+        <BaseHeader
+          v-else
+          :title="this.$page.title"
+          :description="this.$page.frontmatter.description"
+        />
       </div>
     </header>
     <div id="main" class="container">
