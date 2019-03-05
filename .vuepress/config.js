@@ -3,7 +3,7 @@ module.exports = {
   dest: 'dist',
   title: 'Vuepress Blog',
   description: 'Just playing around | theme-monday',
-  theme: 'first',
+  theme: 'monday',
   themeConfig: {
     nav: [
       { path: '/', name: 'Home', icon: 'mdi mdi-home-circle mdi-24px' },
