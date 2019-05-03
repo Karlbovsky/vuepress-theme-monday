@@ -93,7 +93,7 @@ plugins: [
     ]
 ```
 
-_The <b>above</b> solved the compiling ghost issue!!_ :tada: :100:
+_The <b>above</b> seems to solve the compiling ghost issue!!_ :tada: :100:
 
 ---
 
